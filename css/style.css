@@ -1,0 +1,548 @@
+@font-face{font-family:'Conv_SukhumvitTadmai_Bol';src:url('../fonts/SukhumvitTadmai_Bol.eot');src:local('รขหยบ'),url('../fonts/SukhumvitTadmai_Bol.woff') format('woff'),url('../fonts/SukhumvitTadmai_Bol.ttf') format('truetype'),url('../fonts/SukhumvitTadmai_Bol.svg') format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'Conv_SukhumvitTadmai_Bol';src:url('../fonts/GothamRnd-Medium.eot');src:local('รขหยบ'),url('../fonts/GothamRnd-Medium.woff') format('woff'),url('../fonts/GothamRnd-Medium.ttf') format('truetype'),url('../fonts/GothamRnd-Medium.svg') format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'Conv_SukhumvitTadmai_Tex';src:url('../fonts/SukhumvitTadmai_Tex.eot');src:local('รขหยบ'),url('../fonts/SukhumvitTadmai_Tex.woff') format('woff'),url('../fonts/SukhumvitTadmai_Tex.ttf') format('truetype'),url('../fonts/SukhumvitTadmai_Tex.svg') format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'Conv_SukhumvitTadmai_Tex';src:url('../fonts/GothamRnd-Book.eot');src:local('รขหยบ'),url('../fonts/GothamRnd-Book.woff') format('woff'),url('../fonts/GothamRnd-Book.ttf') format('truetype'),url('../fonts/GothamRnd-Book.svg') format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'Conv_SukhumvitTadmai_TexT';src:url('../fonts/SukhumvitTadmai_Tex.eot');src:local('รขหยบ'),url('../fonts/SukhumvitTadmai_Tex.woff') format('woff'),url('../fonts/SukhumvitTadmai_Tex.ttf') format('truetype'),url('../fonts/SukhumvitTadmai_Tex.svg') format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'Conv_SukhumvitTadmai_Thi';src:url('../fonts/SukhumvitTadmai_Thi.eot');src:local('รขหยบ'),url('../fonts/SukhumvitTadmai_Thi.woff') format('woff'),url('../fonts/SukhumvitTadmai_Thi.ttf') format('truetype'),url('../fonts/SukhumvitTadmai_Thi.svg') format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'Conv_SukhumvitTadmai_Thi';src:url('../fonts/GothamRnd-Light.eot');src:local('รขหยบ'),url('../fonts/GothamRnd-Light.woff') format('woff'),url('../fonts/GothamRnd-Light.ttf') format('truetype'),url('../fonts/GothamRnd-Light.svg') format('svg');font-weight:normal;font-style:normal;unicode-range:U+30-39,U+41-5A,U+61-7A,U+C0-FF}
+
+
+@font-face{font-family:'Gotham-Bold';src:url('../fonts/GothamRnd-Bold.eot');src:local('Ã¢ËœÂº'),url('../fonts/GothamRnd-Bold.woff') format('woff'),url('../fonts/GothamRnd-Bold.ttf') format('truetype'),url('../fonts/GothamRnd-Bold.svg') format('svg');font-weight:normal;font-style:normal}
+
+@font-face{font-family:'Gotham-Medium';src:url('../fonts/GothamRnd-Medium.eot');src:local('Ã¢ËœÂº'),url('../fonts/GothamRnd-Medium.woff') format('woff'),url('../fonts/GothamRnd-Medium.ttf') format('truetype'),url('../fonts/GothamRnd-Medium.svg') format('svg');font-weight:normal;font-style:normal}
+/* FONT */
+@font-face {
+  font-family: sukhumvit;
+  src: url(../fonts/sukhumvit-set_bold-webfont.eot);
+  src: url(../fonts/sukhumvit-set_bold-webfont.eot?#iefix)
+      format("embedded-opentype"),
+    url(../fonts/sukhumvit-set_bold-webfont.woff2) format("woff2"),
+    url(../fonts/sukhumvit-set_bold-webfont.woff) format("woff"),
+    url(../fonts/sukhumvit-set_bold-webfont.ttf) format("truetype");
+  /* font-weight: bold; */
+}
+
+@font-face {
+  font-family: sukhumvit;
+  src: url(../fonts/sukhumvit-set_medium-webfont.eot);
+  src: url(../fonts/sukhumvit-set_medium-webfont.eot?#iefix)
+      format("embedded-opentype"),
+    url(../fonts/sukhumvit-set_medium-webfont.woff2) format("woff2"),
+    url(../fonts/sukhumvit-set_medium-webfont.woff) format("woff"),
+    url(../fonts/sukhumvit-set_medium-webfont.ttf) format("truetype");
+  /*font-weight: 400;
+  font-style: normal; */
+}
+
+@font-face {
+  font-family: sukhumvit_setsemi_bold;
+  src: url(../fonts/sukhumvit-set_semibold-webfont.eot);
+  src: url(../fonts/sukhumvit-set_semibold-webfont.eot?#iefix)
+      format("embedded-opentype"),
+    url(../fonts/sukhumvit-set_semibold-webfont.woff2) format("woff2"),
+    url(../fonts/sukhumvit-set_semibold-webfont.woff) format("woff"),
+    url(../fonts/sukhumvit-set_semibold-webfont.ttf) format("truetype");
+  /* font-weight: 400;
+  font-style: normal; */
+}
+
+@font-face {
+  font-family: sukhumvit_settext;
+  src: url(../fonts/sukhumvit-set_text-webfont.eot);
+  src: url(../fonts/sukhumvit-set_text-webfont.eot?#iefix)
+      format("embedded-opentype"),
+    url(../fonts/sukhumvit-set_text-webfont.woff2) format("woff2"),
+    url(../fonts/sukhumvit-set_text-webfont.woff) format("woff"),
+    url(../fonts/sukhumvit-set_text-webfont.ttf) format("truetype");
+  /*font-weight: 400;
+  font-style: normal;*/
+}
+
+
+
+
+/* CSS start for the login form */
+body {
+	background-color: white;
+  font-family: "Conv_SukhumvitTadmai_Tex", sans-serif;
+  letter-spacing: 0 !important;
+  font-size: 14px;
+
+}
+.form-group {
+    margin-bottom: 0.5em;
+}
+/*
+	.checkbox label, .radio label, label {
+    font-size: 14px !important;
+}
+
+.custom-file-control, .form-control {
+	font-size: 14px !important;
+}
+
+input {
+	font-size: 14px !important;
+}
+
+::placeholder {
+	font-size: 16px !important;
+}
+*/
+input.btn-lg {
+	font-size: 18px !important;
+}
+.sukhumvit-bold {
+  font-family: "Conv_SukhumvitTadmai_Bol", sans-serif !important;
+  font-weight: normal !important;
+	
+}
+.Gotham-Bold {
+  font-family: "Gotham-Bold", sans-serif !important;
+	
+}
+
+label {
+  color: #080808;
+ font-family: "Conv_SukhumvitTadmai_Bol", sans-serif !important;
+ margin-bottom: 0px !important;
+}
+.frm-box {
+  margin: 2em auto;
+  position: relative;
+  width: 100%;
+}
+.frm-box .wrp {
+  margin: 25px auto 0;
+  overflow: hidden;
+}
+.frm-box .panel-heading {
+  border-bottom: 1px solid #eaeced;
+}
+.hdr_wrap img {
+  width: 45px;
+}
+.problemLogging {
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 10px;
+}
+.Separator-box p {
+  text-align: center;
+  width: 30px;
+  margin: auto;
+  background-color: #fff;
+  position: relative;
+  color: #6c7378;
+  top: -1.8em;
+}
+input.form-control {
+	padding-top: 2px !important;
+  }
+
+.btn-Submit {
+  background: #0070ba;
+  color: white;
+}
+.btn-Submit:hover {
+  color: #cec8c8;
+}
+.btn-Register {
+  background: #d2dbe1;
+  margin-top: -10px;
+}
+.btn-Register:focus {
+  outline: 0;
+  border: 1px solid #d2dbe1;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.btn-Submit:focus {
+  outline: 0;
+  border: 1px solid #0070ba;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.menu {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  background: #f7f9fa;
+  margin-top: 15px;
+}
+.list-inline_t {
+  margin: 0;
+  padding: 5px;
+}
+ul.list-inline_t li {
+  display: inline-block;
+  padding: 5px 1px;
+  font-size: 11px;
+  font-weight: 400;
+}
+.menu a {
+  color: #333;
+  opacity: 0.8;
+}
+.menu a:hover {
+  text-decoration: none;
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.form-control {
+  background-image: linear-gradient(0deg, #d50000 2px, rgba(213, 0, 0, 0) 0),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.26) 1px, transparent 0);
+}
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+.custom-file-control, .form-control, input::placeholder, label {
+    line-height: 1.5 !important; 
+}
+.btn:hover {
+  background: inherit;
+}
+.list-payment {
+  list-style: none;
+  padding: 10px;
+  margin-bottom: 0px;
+}
+.list-payment li {
+  cursor: pointer;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+.list-payment li .fa-chevron-right {
+  color: #aaa;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.list-payment a {
+  display: flex;
+  align-items: center;
+}
+.list-payment a img {
+  /*width: 50px;*/
+  height: 25px;
+  margin: 0 15px;
+}
+.alert {
+	/*padding: 10px -5px 10px 0px !important;*/
+}
+.alert.alert-total {
+  font-size: 1.5rem;
+  font-family: "Conv_SukhumvitTadmai_Bol", sans-serif !important;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.alert2 {
+ background-color: #eee;
+  border-radius: 5px;
+  position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.alert-total2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  
+}
+
+
+.store-info {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+.store-icon {
+  border-radius: 8px;
+  background-color: #ddd;
+  padding: 5px;
+  margin-right: 10px;
+  height: 45px;
+}
+.store-detail {
+  font-size: 14px;
+    font-family: "Conv_SukhumvitTadmai_Bol", sans-serif !important;
+}
+.store-name {
+    font-family: "Conv_SukhumvitTadmai_Bol", sans-serif !important;
+}
+
+/* enable absolute positioning */
+.inner-addon {
+  position: relative;
+}
+
+/* style icon */
+.inner-addon .fas, .inner-addon .cc-label {
+  position: absolute;
+  padding: 10px;
+  color: #ddd;
+  z-index: 9999;
+  cursor: pointer;
+  transition: color 0.5s ease-in;
+}
+.inner-addon .fas:hover,
+.inner-addon .fas:active {
+  color: red;
+}
+
+/* align icon */
+.left-addon .fas, .left-addon .cc-label {
+  left: 0px;
+}
+.right-addon .fas, .right-addon .cc-label {
+  right: 0px;
+}
+
+/* add padding  */
+.left-addon input {
+  padding-left: 30px;
+}
+.right-addon input {
+  padding-right: 30px;
+}
+
+.frm-box {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+.frm-box .wrp {
+  margin: 40px auto 0;
+  overflow: hidden;
+}
+.frm-box .panel-heading {
+  border-bottom: 1px solid #eaeced;
+}
+.hdr_wrap img {
+  width: 50px;
+}
+.problemLogging {
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 10px;
+}
+.Separator-box p {
+  text-align: center;
+  width: 30px;
+  margin: auto;
+  background-color: #fff;
+  position: relative;
+  color: #6c7378;
+  top: -1.8em;
+}
+.btn-Submit {
+  background: #0070ba;
+  color: white;
+}
+.btn-Submit:hover {
+  color: #cec8c8;
+}
+.btn-Register {
+  background: #d2dbe1;
+  margin-top: -10px;
+}
+.btn-Register:focus {
+  outline: 0;
+  border: 1px solid #d2dbe1;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.btn-Submit:focus {
+  outline: 0;
+  border: 1px solid #0070ba;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.menu {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  background: #f7f9fa;
+  margin-top: 15px;
+}
+.list-inline_t {
+  margin: 0;
+  padding: 5px;
+}
+ul.list-inline_t li {
+  display: inline-block;
+  padding: 5px 1px;
+  font-size: 11px;
+  font-weight: 400;
+}
+.menu a {
+  color: #333;
+  opacity: 0.8;
+}
+.menu a:hover {
+  text-decoration: none;
+  opacity: 1;
+  text-decoration: underline;
+}
+.pre-footer {
+	font-size: 11px !important;
+}
+@media only screen and (min-width: 600px) {
+  .frm-box {
+    width: 460px;
+  }
+  .frm-box .wrp {
+    border: 1.5px solid #eaeced;
+    border-radius: 10px;
+  }
+  .frm-box .panel-body {
+    padding: 42px 42px 36px;
+  }
+  .frm-box .panel-heading {
+    padding: 25px 42px 25px;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .frm-box .panel-heading {
+    border-bottom: 1px solid #eaeced;
+    padding: 10px 0px;
+    margin: 35px 0px;
+  }
+  .frm-box .wrp {
+    margin: -25px auto 0;
+  }
+  .panel-body {
+    margin: 20px;
+  }
+  .hdr_wrap {
+    padding-left: 20px !important;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .frm-box {
+    width: 460px;
+  }
+  .frm-box .wrp {
+    /* border: 1.5px solid #eaeced; */
+    border-radius: 10px;
+  }
+  .frm-box .panel-body {
+	padding: 20px;
+    /*padding: 25px 20px 36px;*/
+  }
+  .frm-box .panel-heading {
+    padding: 10px 20px 10px;
+    background-color: black;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .frm-box .panel-heading {
+    border-bottom: 1px solid #eaeced;
+    padding: 10px 0px;
+    margin: 25px 0px;
+    background-color: black;
+  }
+  .frm-box .wrp {
+    margin: -25px auto 0;
+  }
+  .panel-body {
+    margin: 20px;
+  }
+  .hdr_wrap {
+    padding-left: 20px !important;
+  }
+}
+
+
+
+.mgt10 {
+	margin-top: 10% !important;
+}
+
+.mgt20 {
+	margin-top: 20% !important;
+}
+
+
+
+.custom-file-control:disabled, .disabled.custom-file-control, .form-control.disabled, .form-control:disabled, .form-control[disabled], [disabled].custom-file-control, fieldset[disabled][disabled] .custom-file-control, fieldset[disabled][disabled] .form-control { background-color: #fafafa !important;background-image: none  !important; }
+
+
+.dropdown-country{
+  position: relative;
+}
+.dropdown-country .fa-chevron-down  {
+  color: #a7a7a7;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.list-payment li:hover {
+  background-color: none;
+  border-color: #cc3733;
+}
+
+
+.btn-danger.custom-file-control:before, .btn.btn-danger {
+    color: white !important;
+    background-color: #ce3437;
+    border-color: #ce3437;
+     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+         text-transform: inherit;	
+}
+
+.btn-danger.active.custom-file-control:before, .btn-danger.custom-file-control:active:before, .btn-danger.custom-file-control:focus:before, .btn-danger.custom-file-control:hover:before, .btn-danger.focus.custom-file-control:before, .btn.btn-danger.active, .btn.btn-danger.focus, .btn.btn-danger:active, .btn.btn-danger:focus, .btn.btn-danger:hover, .open>.btn-danger.dropdown-toggle.custom-file-control:before, .open>.btn.btn-danger.dropdown-toggle {
+	color: white !important;
+    background-color: #f44336 !important;
+    border-color: #f44336 !important;
+     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.btn-danger:disabled {
+	background: #ccc !important;
+    background-color: #ccc !important;
+    opacity: 100 !important;
+    color: white !important;
+}
+.btn-danger:disabled:hover {
+	background: #ccc !important;
+    background-color: #ccc !important;
+    opacity: 100 !important;
+    color: white !important;
+}
+.btn-danger:not(:disabled):not(.disabled).active, .btn-danger:not(:disabled):not(.disabled):active, .show>.btn-danger.dropdown-toggle {
+     	color: white !important;
+    background-color: #ce3437 !important;
+    border-color: #ce3437 !important;
+     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+     
+     }
+.btn.btn-lg.confirmation-button:hover {
+  color: white !important;
+    background-color: #f44336 !important;
+    border-color: #f44336 !important;
+     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.i-icon-card-union {
+  width: 34px;
+  height: 25px;
+   background-image: url("../images/logo_union-pay.png");
+  background-size: contain;
+}
+form {
+    margin-bottom: 0.2rem !important;
+}

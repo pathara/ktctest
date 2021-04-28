@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>KTC GATEWAY</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" rel="stylesheet">
+	<link href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" rel="stylesheet">
+	<link href="./css/font-awesome/all.min.css" rel="stylesheet">
+	<link href="./css/style.css" rel="stylesheet">
+	<link href="./css/cccheck.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="row loginForm">
+			<div class="frm-box col-md-offset-4">
+				<div class="panel panel-default wrp">
+					<div class="panel-heading">
+						<div class="hdr_wrap"><img alt="KTC" src="https://www.ktc.co.th/sites/cs/assets/ktc_css/img/index/logo-ktc.svg"></div>
+					</div>
+					<div class="panel-body">
+						<h4 class="sukhumvit-bold text-center">Payment Details</h4>
+						<div class="alert store-info justify-content-between pr-0 pl-0">
+							<div class="d-flex">
+								<div class="store-icon p-2">
+									<i class="fas fa-2x fa-store"></i>
+								</div>
+								<div class="store-detail">
+									<div class="store-name">
+										Tailybuddy
+									</div>
+									<div class="store-code">
+										Merchant Ref. No. : 200193349
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="alert alert-total">
+							1,043.50 THB
+						</div>
+						<form accept-charset="UTF-8" class="needs-validation" id="form-payment" name="form-payment" novalidate="" role="form">
+							<fieldset>
+								<div class="form-group">
+									<label>Cardholder Name</label> <input class="form-control" id="cc-holder-name" placeholder="Name on Card" required="" type="text">
+									<div class="invalid-feedback">
+										กรุณากรอกข้อมูล
+									</div>
+								</div>
+								<div class="form-group">
+									<label>Card Number</label>
+									<div class="inner-addon right-addon">
+										<span class="cc-label p-0" id="show-cc-label"></span> <input class="form-control" id="cc-number" placeholder="0000 0000 0000 0000" required="" type="text">
+										<div class="invalid-feedback">
+											กรุณาพิมพ์Card Number 16 หลัก
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="row">
+										<div class="col-6">
+											<label>Expiry Date</label>
+											<div class="inner-addon right-addon">
+												<input class="form-control" id="cc-expire" placeholder="MM/YY" required="" type="text">
+												<div class="invalid-feedback">
+													กรุณากรอกข้อมูล
+												</div>
+											</div>
+										</div>
+										<div class="col-6">
+											<label>CVV</label>
+											<div class="inner-addon right-addon">
+												<input class="form-control" id="cc-ccv" placeholder="000" required="" type="text">
+												<div class="invalid-feedback">
+													กรุณากรอกข้อมูล
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label>Issuing Bank Country</label>
+									<div class="dropdown-country">
+										<select class="form-control">
+											<option>
+												Thailand
+											</option>
+											<option>
+												Option 2
+											</option>
+											<option>
+												Option 3
+											</option>
+										</select> <i class="fa fa-chevron-down"></i>
+									</div>
+								</div><input class="btn btn-lg btn-danger btn-block mgt10" disabled="disabled" type="submit" value="Submit">
+								<div class="problemLogging">
+									<a class="text-danger" href="payment-method.html">Cancel</a>
+								</div>
+							</fieldset>
+						</form>
+						<div class="p-3">
+							<ul class="list-inline text-center">
+								<li class="list-inline-item"><img src="./images/logo_visa-secure.png" width="30"></li>
+								<li class="list-inline-item"><img src="./images/logo_mastercard-id-check.jpg" width="30"></li>
+								<li class="list-inline-item"><img src="./images/logo_jcb-j-secure.png" width="30"></li>
+							</ul>
+							<div class="text-center pre-footer">
+								Secured Authenticated Merchant
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
+	</script> 
+	<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js">
+	</script> 
+	<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js">
+	</script> 
+	<script src="https://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js">
+	</script> 
+	<script src="./js/jquery.cccheck.js">
+	</script> 
+	<script type="text/javascript">
+      $(document).ready(function() {
+        $.cccheck();
+      });
+    </script>
+	<script>
+	   $(document).ready(function () {
+	     var $form = '#form-payment';
+	     // Query Param
+	     const queryString = window.location.search;
+	     const urlParams = new URLSearchParams(queryString);
+	     const cGroup = urlParams.get('cgroup');
+
+	     $.cccheck({ cGroup: cGroup });
+	     $('[data-toggle="tooltip"]').tooltip();
+	     $('#cc-number').mask('0000 0000 0000 0000');
+	     $('#cc-expire').mask('00/00');
+	     $('#cc-ccv').mask('000');
+
+	     $(`${$form} input[type=text]`).on("keyup", function(){
+	         if( $('#cc-holder-name').val() != ""
+	         && ( $('#cc-number').val() != "" && $('#cc-number').val().length >= 19 )
+	         && ( $('#cc-expire').val() != "" && $('#cc-expire').val().length >= 5 )
+	         && ( $('#cc-ccv').val() != "" && $('#cc-ccv').val().length >= 3 ) ){
+	             $(`${$form} input[type='submit']`).removeAttr("disabled");
+	         } else {
+	             $(`${$form} input[type='submit']`).attr("disabled", "disabled");
+	         }
+	     });
+	   });
+	</script> 
+	<script>
+	   // Example starter JavaScript for disabling form submissions if there are invalid fields
+	   (function () {
+	     "use strict";
+	     window.addEventListener(
+	       "load",
+	       function () {
+	         // Fetch all the forms we want to apply custom Bootstrap validation styles to
+	         var forms = document.getElementsByClassName("needs-validation");
+	         // Loop over them and prevent submission
+	         var validation = Array.prototype.filter.call(forms, function (form) {
+	           form.addEventListener(
+	             "submit",
+	             function (event) {
+	               if (form.checkValidity() === false) {
+	                 event.preventDefault();
+	                 event.stopPropagation();
+	               }
+	               form.classList.add("was-validated");
+	             },
+	             false
+	           );
+	         });
+	       },
+	       false
+	     );
+	   })();
+	</script> 
+</body>
+</html>
