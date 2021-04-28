@@ -31,7 +31,7 @@
     var ccValue = creditCards[i]
     var ccRegex = {
       regex: creditCardsRegex[ccValue],
-      label: ccValue
+      label: ccValue,
     };
     regexes.push(ccRegex);
   }
@@ -51,7 +51,7 @@ function myTrim(x) {
     var config = {
         // Config local
         inputCCNumber: "#cc-number",
-        elementShowLabel: "#show-cc-label"
+        elementShowLabel: "#show-cc-label",
       },
       nodeNumber = $(config.inputCCNumber),
       nodeLabel = $(config.elementShowLabel);
